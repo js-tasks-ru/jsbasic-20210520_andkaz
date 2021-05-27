@@ -1,3 +1,10 @@
 function checkSpam(str) {
-  // ваш код...
+  let word = str.toLowerCase()
+  if (word === '1xbet now' || word === 'free xxxxx') {
+    return true
+  } else {
+    return false
+  }
+  
 }
+
