@@ -1,9 +1,13 @@
 function ucFirst(str) {
-    if (str == "") {
-    console.log("value is empty");
-  } else {
-    let word = str[0].toUpperCase() + str.slice(1);
-    console.log(word);
+  if (str === '') {
+    return ('')
   }
+  function toUp(text) {
+    return text[0].toUpperCase() + text.slice(1)
+  }
+  return toUp(str)
+
 }
+
+
 
