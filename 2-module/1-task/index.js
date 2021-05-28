@@ -1,11 +1,13 @@
 function sumSalary(salaries) {
-  let sumSalaries = 0
+  let val = 0
+  let arr = [false, NaN, Infinity, -Infinity]
 
-  function sumSalary(salaries) {
-    for (let key in salaries) {
-      if (typeof salaries[key] === 'number') {
-        sumSalaries = salaries[key] + salaries[key] + salaries[key]
-      }
+
+  for (let key in salaries) {
+    if (typeof salaries[key] === 'number' || salaries[key] == false || salaries[key] != arr ) {
+      val += salaries[key]// + salaries[key] + salaries[key]
     }
+  }
+  return val
 }
-}
+
