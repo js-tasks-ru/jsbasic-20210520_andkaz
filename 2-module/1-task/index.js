@@ -4,7 +4,7 @@ function sumSalary(salaries) {
 
 
   for (let key in salaries) {
-    if (typeof salaries[key] === 'number' || salaries[key] == false || salaries[key] != arr ) {
+    if (typeof salaries[key] === 'number' || salaries[key] == false ) {
       val += salaries[key]// + salaries[key] + salaries[key]
     }
   }
