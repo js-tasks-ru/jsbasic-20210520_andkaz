@@ -1,26 +1,15 @@
-let calculator = {
+const calculator = {
+  sum: function () {
+    return this.a + this.b;
+  },
+  mul: function () {
+    return this.a * this.b;
+  },
   read: function (a, b) {
-    this.a = +prompt('first number', '')
-    this.b = +prompt('second number', '')    
-   }
-   
- }
- 
- 
- calculator.read()
- 
- function mul () {
-   return this.a * this.b
- }
- 
- calculator.mul = mul 
- 
- 
- function sum () {
-   return this.a + this.b
- }
- 
- calculator.sum = sum
+    calculator.a = a;
+    calculator.b = b;
+  }
+};
 
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
