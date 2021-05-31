@@ -1,3 +1,11 @@
 function sumSalary(salaries) {
-  // ваш код...
+  let val = 0  
+
+  for (let key in salaries) {
+    if (typeof salaries[key] === 'number' && !isNaN(salaries[key]) && isFinite(salaries[key]) )  {
+      val += salaries[key]// + salaries[key] + salaries[key]
+    }
+  }
+  return val
 }
+
