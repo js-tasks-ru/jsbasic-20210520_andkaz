@@ -33,13 +33,14 @@ function initCarousel() {
 
     count += step
 
-    $buttonLeft.style.display = 'flex' //show left button
+    $buttonLeft.style.display = '' //show left button
 
     // debugger    
 
     for (; count < step * 4;) {
       if (count === 2964) {
-        $buttonRight.style.display = 'none' //hide right button  
+       $buttonRight.style.display = 'none' //hide right button
+  
       }
       
       return $divInner.style.transform = `translateX(-${count}px)`      
