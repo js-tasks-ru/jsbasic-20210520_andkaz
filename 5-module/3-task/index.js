@@ -11,11 +11,13 @@ function initCarousel() {
 
   let count = 0
   const step = $divInner.offsetWidth
+  let currentSlideNumber = 0
 
   function slideLeft() {
     $buttonRight.style.display = 'flex' //show right button
     console.log('click-left');
     count -= step
+    currentSlideNumber--
     
     // debugger
 
@@ -32,13 +34,14 @@ function initCarousel() {
     console.log('click-right');
 
     count += step
+    currentSlideNumber++
 
     $buttonLeft.style.display = '' //show left button
 
     // debugger    
 
     for (; count < step * 4;) {
-      if (count === 2964) {
+      if (currentSlideNumber === 3) {
        $buttonRight.style.display = 'none' //hide right button
   
       }
